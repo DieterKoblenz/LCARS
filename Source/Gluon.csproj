@@ -1,0 +1,541 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C901CB40-E724-4F31-A97B-131EDF0C39EC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeImp.Gluon</RootNamespace>
+    <AssemblyName>Gluon</AssemblyName>
+    <StartupObject>CodeImp.Gluon.General</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ApplicationIcon>Gluon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Build\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Build\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="InTheHand.Net.Personal, Version=3.0.2.0, Culture=neutral, PublicKeyToken=ea38caa273134499, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.2.2.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="SharpPcap, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Instrumentation">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agenda\AgendaDayDisplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Agenda\AgendaDayDisplay.Designer.cs">
+      <DependentUpon>AgendaDayDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda\AgendaDisplayPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Agenda\AgendaDisplayPanel.Designer.cs">
+      <DependentUpon>AgendaDisplayPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda\AgendaEditDisplayPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Agenda\AgendaEditDisplayPanel.Designer.cs">
+      <DependentUpon>AgendaEditDisplayPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda\AgendaItem.cs" />
+    <Compile Include="Agenda\AgendaItemDisplayPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Agenda\AgendaItemDisplayPanel.Designer.cs">
+      <DependentUpon>AgendaItemDisplayPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda\AgendaItemRecur.cs" />
+    <Compile Include="Agenda\AgendaItemSorter.cs" />
+    <Compile Include="Agenda\AgendaManager.cs" />
+    <Compile Include="Controls\DisplayProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Environment\BuienradarDisplayPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Environment\BuienradarDisplayPanel.Designer.cs">
+      <DependentUpon>BuienradarDisplayPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Environment\PixelColor.cs" />
+    <Compile Include="Controls\ColorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ColorControl.designer.cs">
+      <DependentUpon>ColorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DisplayArrow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DisplayBarDesigner.cs" />
+    <Compile Include="Controls\DisplayCorner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DisplayCorner.Designer.cs">
+      <DependentUpon>DisplayCorner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DisplayFrame.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DisplayKeyboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DisplayKeyboard.Designer.cs">
+      <DependentUpon>DisplayKeyboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DisplayLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DisplayPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DisplayTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DisplayWebBrowser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\IVisibleInfo.cs" />
+    <Compile Include="Controls\DisplayUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Groceries\AddGroceriesDisplayPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Groceries\AddGroceriesDisplayPanel.Designer.cs">
+      <DependentUpon>AddGroceriesDisplayPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Groceries\GroceriesItemSorter.cs" />
+    <Compile Include="Groceries\GroceriesItem.cs" />
+    <Compile Include="Groceries\GroceriesManager.cs" />
+    <Compile Include="Groceries\GroceriesDisplayPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Groceries\GroceriesDisplayPanel.Designer.cs">
+      <DependentUpon>GroceriesDisplayPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\InterProcess.cs" />
+    <Compile Include="Main\OverviewTechPanel1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\OverviewTechPanel1.Designer.cs">
+      <DependentUpon>OverviewTechPanel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Multimedia\DirectoryEntry.cs" />
+    <Compile Include="Multimedia\DirectoryList.cs" />
+    <Compile Include="Multimedia\InternetDisplayPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Multimedia\InternetDisplayPanel.Designer.cs">
+      <DependentUpon>InternetDisplayPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Multimedia\LibraryBrowserDisplayPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Multimedia\LibraryBrowserDisplayPanel.Designer.cs">
+      <DependentUpon>LibraryBrowserDisplayPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\AccessDisplayPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\AccessDisplayPanel.Designer.cs">
+      <DependentUpon>AccessDisplayPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\BlankScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Displays\BlankScreen.Designer.cs">
+      <DependentUpon>BlankScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\ControlTabIndexSorter.cs" />
+    <Compile Include="Displays\DisplayManager.cs" />
+    <Compile Include="Displays\DisplayMode.cs" />
+    <Compile Include="Main\LoadingDisplayPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\LoadingDisplayPanel.Designer.cs">
+      <DependentUpon>LoadingDisplayPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\ErrorDisplayPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\ErrorDisplayPanel.Designer.cs">
+      <DependentUpon>ErrorDisplayPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\DatabaseManager.cs" />
+    <Compile Include="Main\DataTable.cs" />
+    <Compile Include="Main\DataTableRow.cs" />
+    <Compile Include="Main\OverviewDisplayPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\OverviewDisplayPanel.Designer.cs">
+      <DependentUpon>OverviewDisplayPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\ColorIndex.cs" />
+    <Compile Include="Main\CornerImagesProvider.cs" />
+    <Compile Include="Controls\DisplayBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DisplayButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Main\Clock.cs" />
+    <Compile Include="Main\ColorPalette.cs" />
+    <Compile Include="Main\ColorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\ColorsForm.Designer.cs">
+      <DependentUpon>ColorsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Configuration.cs" />
+    <Compile Include="Controls\DisplayPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DisplayPanel.Designer.cs">
+      <DependentUpon>DisplayPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\IColorable.cs">
+    </Compile>
+    <Compile Include="Main\InterfaceImage.cs" />
+    <Compile Include="Main\InterfaceImageProvider.cs" />
+    <Compile Include="Main\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\General.cs" />
+    <Compile Include="Main\MessageBeepType.cs" />
+    <Compile Include="Main\PowerManager.cs" />
+    <Compile Include="Main\QueueItem.cs" />
+    <Compile Include="Main\QueueManager.cs" />
+    <Compile Include="Main\SettingsManager.cs" />
+    <Compile Include="Main\SoundsManager.cs" />
+    <Compile Include="Main\Tools.cs" />
+    <Compile Include="Main\WaveOutCaps.cs" />
+    <Compile Include="Multimedia\LibrarySearchDisplayPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Multimedia\LibrarySearchDisplayPanel.Designer.cs">
+      <DependentUpon>LibrarySearchDisplayPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Multimedia\MediaPlayerDisplayPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Multimedia\MediaPlayerDisplayPanel.Designer.cs">
+      <DependentUpon>MediaPlayerDisplayPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Multimedia\PlaylistsDisplayPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Multimedia\PlaylistsDisplayPanel.Designer.cs">
+      <DependentUpon>PlaylistsDisplayPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Network\EventRemoteService.cs" />
+    <Compile Include="Network\NetPingTechPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Network\NetPingTechPanel.Designer.cs">
+      <DependentUpon>NetPingTechPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Network\RemoteClient.cs" />
+    <Compile Include="Network\RemoteCommand.cs" />
+    <Compile Include="Network\RemoteService.cs" />
+    <Compile Include="Network\RemoteServiceControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Network\RemoteServiceControl.Designer.cs">
+      <DependentUpon>RemoteServiceControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Network\RouteNodeFoundEventArgs.cs" />
+    <Compile Include="Network\SocketErrorDesc.cs" />
+    <Compile Include="Network\TraceJob.cs" />
+    <Compile Include="Network\TraceRt.cs" />
+    <Compile Include="Network\TracertNode.cs" />
+    <Compile Include="Network\RemoteManager.cs" />
+    <Compile Include="Notes\NoteItem.cs" />
+    <Compile Include="Notes\NotesDisplayPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Notes\NotesDisplayPanel.Designer.cs">
+      <DependentUpon>NotesDisplayPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notes\NotesManager.cs" />
+    <Compile Include="Obex\ObexTransferDisplayPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Obex\ObexTransferDisplayPanel.Designer.cs">
+      <DependentUpon>ObexTransferDisplayPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Obex\ObexBluetoothDevice.cs" />
+    <Compile Include="Obex\ObexManager.cs" />
+    <Compile Include="Obex\ObexTransferObject.cs" />
+    <Compile Include="Network\PCapManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Agenda\AgendaDayDisplay.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AgendaDayDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agenda\AgendaDisplayPanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AgendaDisplayPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agenda\AgendaEditDisplayPanel.resx">
+      <DependentUpon>AgendaEditDisplayPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agenda\AgendaItemDisplayPanel.resx">
+      <DependentUpon>AgendaItemDisplayPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Environment\BuienradarDisplayPanel.resx">
+      <DependentUpon>BuienradarDisplayPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ColorControl.resx">
+      <DependentUpon>ColorControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DisplayArrow.resx">
+      <DependentUpon>DisplayArrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DisplayCorner.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DisplayCorner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DisplayKeyboard.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DisplayKeyboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DisplayPanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DisplayPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DisplayUserControl.resx">
+      <DependentUpon>DisplayUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Groceries\AddGroceriesDisplayPanel.resx">
+      <DependentUpon>AddGroceriesDisplayPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Groceries\GroceriesDisplayPanel.resx">
+      <DependentUpon>GroceriesDisplayPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\OverviewTechPanel1.resx">
+      <DependentUpon>OverviewTechPanel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Multimedia\InternetDisplayPanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InternetDisplayPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Multimedia\LibraryBrowserDisplayPanel.resx">
+      <DependentUpon>LibraryBrowserDisplayPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\AccessDisplayPanel.resx">
+      <DependentUpon>AccessDisplayPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Displays\BlankScreen.resx">
+      <DependentUpon>BlankScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\LoadingDisplayPanel.resx">
+      <DependentUpon>LoadingDisplayPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\ErrorDisplayPanel.resx">
+      <DependentUpon>ErrorDisplayPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\OverviewDisplayPanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OverviewDisplayPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\ColorsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColorsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Multimedia\LibrarySearchDisplayPanel.resx">
+      <DependentUpon>LibrarySearchDisplayPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Multimedia\MediaPlayerDisplayPanel.resx">
+      <DependentUpon>MediaPlayerDisplayPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Multimedia\PlaylistsDisplayPanel.resx">
+      <DependentUpon>PlaylistsDisplayPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Network\NetPingTechPanel.resx">
+      <DependentUpon>NetPingTechPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notes\NotesDisplayPanel.resx">
+      <DependentUpon>NotesDisplayPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Obex\ObexTransferDisplayPanel.resx">
+      <DependentUpon>ObexTransferDisplayPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Environment\TreintijdenDisplayPanel.resx">
+      <DependentUpon>TreintijdenDisplayPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Environment\TreintijdenDisplayPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Environment\TreintijdenDisplayPanel.Designer.cs">
+      <DependentUpon>TreintijdenDisplayPanel.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Curve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loop.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radarnoise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\600px-Disk-structure.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\600px-Disk-structure1png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diskstructure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Gluon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

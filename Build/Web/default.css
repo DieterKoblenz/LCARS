@@ -1,0 +1,19 @@
+
+body
+{
+	margin: 0 auto;
+	padding: 0;
+	font: 18pt Thonburi-Bold, Tahoma;
+	background: #000000;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+.interface
+{
+	position: absolute;
+	color: #000000;
+	vertical-align: bottom;
+	cursor: pointer;
+}
+

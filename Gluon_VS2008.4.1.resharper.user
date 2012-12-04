@@ -1,0 +1,76 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer>
+      <setting name="UsedSolutionBuilderID">0</setting>
+    </integer>
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Multimedia/f:LibraryBrowserDisplayPanel.cs" caret="1230" scrollPosition="0|20" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Multimedia/f:LibrarySearchDisplayPanel.cs" caret="0" scrollPosition="0|132" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Multimedia/f:MediaPlayerDisplayPanel.cs" caret="431" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Multimedia/f:DirectoryList.cs" caret="0" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Main/f:OverviewDisplayPanel.cs" caret="15303" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Main/f:MainForm.cs" caret="2107" scrollPosition="0|30" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Main/f:MainForm.Designer.cs" caret="16719" scrollPosition="0|289" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Main/f:OverviewDisplayPanel.Designer.cs" caret="31150" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Network/f:EventRemoteService.cs" caret="0" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Network/f:NetPingTechPanel.cs" caret="264" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Network/f:PCapManager.cs" caret="0" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Network/f:RemoteClient.cs" caret="0" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Network/f:RemoteCommand.cs" caret="0" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Network/f:RemoteService.cs" caret="0" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Network/f:RemoteManager.cs" caret="0" scrollPosition="0|84" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Network/f:RemoteServiceControl.cs" caret="0" scrollPosition="0|60" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Network/f:RouteNodeFoundEventArgs.cs" caret="0" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Network/f:SocketErrorDesc.cs" caret="0" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Network/f:TraceJob.cs" caret="0" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Network/f:TraceRt.cs" caret="0" scrollPosition="0|144" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Network/f:TracertNode.cs" caret="0" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Notes/f:NoteItem.cs" caret="0" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Notes/f:NotesDisplayPanel.cs" caret="0" scrollPosition="0|396" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Notes/f:NotesManager.cs" caret="0" scrollPosition="0|18" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Obex/f:ObexBluetoothDevice.cs" caret="0" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Obex/f:ObexManager.cs" caret="996" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Obex/f:ObexTransferDisplayPanel.cs" caret="0" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Obex/f:ObexTransferObject.cs" caret="0" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Main/f:General.cs" caret="571" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Multimedia/f:PlaylistsDisplayPanel.cs" caret="303" scrollPosition="0|0" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Main/f:DatabaseManager.cs" caret="891" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Environment/f:TreintijdenDisplayPanel.cs" caret="595" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Main/f:AccessDisplayPanel.cs" caret="528" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Main/f:QueueItem.cs" caret="1277" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Multimedia/f:InternetDisplayPanel.cs" caret="11919" scrollPosition="0|443" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Multimedia/f:InternetDisplayPanel.cs" caret="3325" scrollPosition="0|92" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Main/f:OverviewDisplayPanel.cs" caret="15303" scrollPosition="0|380" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Main/f:MainForm.cs" caret="2107" scrollPosition="0|30" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Main/f:General.cs" caret="3134" scrollPosition="0|24" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Main/f:General.cs" caret="4585" scrollPosition="0|71" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Main/f:MainForm.Designer.cs" caret="19105" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Main/f:MainForm.Designer.cs" caret="1300" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Main/f:MainForm.Designer.cs" caret="4813" scrollPosition="0|76" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Main/f:General.cs" caret="8222" scrollPosition="0|177" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Main/f:MainForm.Designer.cs" caret="16719" scrollPosition="0|289" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Main/f:OverviewDisplayPanel.Designer.cs" caret="31124" scrollPosition="0|558" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Multimedia/f:PlaylistsDisplayPanel.cs" caret="303" scrollPosition="0|0" />
+      <File id="C901CB40-E724-4F31-A97B-131EDF0C39EC/d:Main/f:General.cs" caret="571" scrollPosition="0|0" />
+    </RecentEdits>
+  </RecentFiles>
+  <UnitTestRunner>
+    <CustomStartDirectory>
+    </CustomStartDirectory>
+    <UseShadowCopy>True</UseShadowCopy>
+    <UseCustomFolder>False</UseCustomFolder>
+    <EnableUnitTesting>True</EnableUnitTesting>
+    <Providers />
+  </UnitTestRunner>
+</Configuration>
